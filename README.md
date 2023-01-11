@@ -5,7 +5,8 @@
 In this article, we will explore when and how to use React’s `useLayoutEffect`
 hook and how it relates to the `useEffect` Hook.
 
-If you'd like to skim this as a Medium article, it can be found [here](#)
+If you'd like to skim this as a Medium article, it can be found
+[here](https://medium.com/@austinrt/demystifying-react-hooks-uselayouteffect-eac6773822)
 
 ## Getting Started
 
