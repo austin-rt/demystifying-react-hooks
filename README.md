@@ -1,12 +1,15 @@
-# Demystifying React Hooks: useCallback
+# Demystifying React Hooks–useLayoutEffect
 
-![](./assets/png/useLayoutEffect-header-small.png)
+![header](./assets/png/useLayoutEffect-header-small.png)
 
 In this article, we will explore when and how to use React’s `useLayoutEffect`
 hook and how it relates to the `useEffect` Hook.
 
-If you'd like to skim this as a Medium article, it can be found
-[here](https://medium.com/@austinrt/demystifying-react-hooks-uselayouteffect-eac6773822)
+If you'd like, you can skim this as a
+[Medium](https://medium.com/@austinrt/demystifying-react-hooks-uselayouteffect-eac6773822)
+or
+[dev.to](https://dev.to/austinrt/demystifying-react-hooks-uselayouteffect-17pp)
+article.
 
 ## Getting Started
 
@@ -36,7 +39,7 @@ when you need to pull it out, you'll know precisely the right tool for the job.
 As every good developer pretends to do before Googling, let's turn to the
 [docs](https://beta.reactjs.org/reference/react/useLayoutEffect).
 
-![](./assets/png/dont.png)
+![react doc warning](./assets/png/dont.png)
 
 The first thing we see on the page for `useLayoutEffect` is a bright orange
 warning telling us not to use `useLayoutEffect`.
@@ -105,7 +108,7 @@ Let's _finally_ dive into the code.
 In `App.js`, you'll see our entire app that aims to simulate a Super Exciting
 Live Stream with a chat functionality on the sidebar.
 
-![](./assets/png/useLayoutEffect-demo-01.png)
+![demo](./assets/png/useLayoutEffect-demo-01.png)
 
 On lines 15 and 16, we're simply initializing a `ref` called `afterChatRef` and
 a state called `messages`.
@@ -174,18 +177,18 @@ open), click the `Performance` tab, click `CPU No throttling`, and set it to
 `4x slowdown` or even `6x slowdown`, depending on how much richer you are than
 me.
 
-![](./assets/gif/useLayoutEffect-demo-02.gif)
+![demo](./assets/gif/useLayoutEffect-demo-02.gif)
 
 Refresh the page. Nice and slow.
 
-![](./assets/gif/useLayoutEffect-demo-03.gif)
+![demo](./assets/gif/useLayoutEffect-demo-03.gif)
 
 See how the chat loads and hangs at the top for a moment before snapping to the
 bottom? Let's reduce the `for loop` to `1e5` (100,000) instead of `1e9`, save,
 and refresh. This is closer to how it may look out in the wild. This flicker is
 that "obscenity" I was talking about earlier.
 
-![](./assets/gif/useLayoutEffect-demo-04.gif)
+![demo](./assets/gif/useLayoutEffect-demo-04.gif)
 
 Let's refer back to the React doc's tooltip example to see the root issue
 they're trying to solve.
@@ -219,12 +222,12 @@ useLayoutEffect(() => {
 Now, when we save and refresh, voila! Our chat no longer flickers at the top
 before scrolling to the bottom.
 
-![](./assets/gif/useLayoutEffect-demo-05.gif)
+![demo](./assets/gif/useLayoutEffect-demo-05.gif)
 
 To demonstrate further, change our arbitrary loop back to `1e9` and throttle
 your browser if needed. Refresh.
 
-![](./assets/gif/useLayoutEffect-demo-06.gif)
+![demo](./assets/gif/useLayoutEffect-demo-06.gif)
 
 While painfully slow, you can see the DOM doesn't paint the chat section until
 after the `useLayoutEffect` has scrolled us to the bottom.
@@ -265,6 +268,16 @@ manager or two. Truthfully, you won't use it very often, but if you do, it's
 important to acknowledge the tradeoffs and consciously sacrifice.
 
 Just remember, you'll know it when you see it.
+
+> I’m always looking for new friends and colleagues. If you found this article
+> helpful and would like to connect, you can find me at any of my homes on the
+> web.
+>
+> [GitHub](https://github.com/austin-rt) |
+> [Twitter](https://twitter.com/0xStink) |
+> [LinkedIn](https://www.linkedin.com/in/austinrt) |
+> [Website](https://austinrt.io) | [Medium](https://austinrt.medium.com/) |
+> [Dev.to](https://dev.to/austinrt)
 
 ## Resources
 
