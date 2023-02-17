@@ -1,4 +1,4 @@
-# Demystifying React Hooks – `useLayoutEffect`
+# `useLayoutEffect` – Demystifying React Hooks (Pt. 4)
 
 ![header](./assets/png/useLayoutEffect-header-small.png)
 
