@@ -269,15 +269,17 @@ important to acknowledge the tradeoffs and consciously sacrifice.
 
 Just remember, you'll know it when you see it.
 
-> I’m always looking for new friends and colleagues. If you found this article
-> helpful and would like to connect, you can find me at any of my homes on the
-> web.
->
-> [GitHub](https://github.com/austin-rt) |
-> [Twitter](https://twitter.com/0xStink) |
-> [LinkedIn](https://www.linkedin.com/in/austinrt) |
-> [Website](https://austinrt.io) | [Medium](https://austinrt.medium.com/) |
-> [Dev.to](https://dev.to/austinrt)
+<hr/>
+I’m always looking for new friends and colleagues. If you found this article
+helpful and would like to connect, you can find me at any of my homes on the
+web.
+
+[GitHub](https://github.com/austin-rt) | [Twitter](https://twitter.com/0xStink)
+| [LinkedIn](https://www.linkedin.com/in/austinrt) |
+[Website](https://austinrt.io) | [Medium](https://austinrt.medium.com/) |
+[Dev.to](https://dev.to/austinrt)
+
+<hr/>
 
 ## Resources
 
