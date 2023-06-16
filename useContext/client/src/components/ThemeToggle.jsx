@@ -1,11 +1,21 @@
-const ThemeToggle = ({ handleClick, theme }) => {
+import { FiSun, FiMoon } from 'react-icons/fi';
+
+const ThemeSliderToggle = ({ theme, handleClick }) => {
   return (
-    <button
+    <div
+      className={`theme-slider-toggle ${theme}`}
       onClick={handleClick}
-      className={theme}
     >
-      Toggle Theme
-    </button>
+      <div className='toggle'>
+        <div className='slider' />
+        <div className='icon-container'>
+          <FiSun className='sun-icon' />
+          <div classname='spacer'></div>
+          <FiMoon className='moon-icon' />
+        </div>
+      </div>
+    </div>
   );
 };
-export default ThemeToggle;
+
+export default ThemeSliderToggle;

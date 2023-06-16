@@ -14,11 +14,11 @@ function App() {
     <div className={theme}>
       <main className={theme}>
         <section className={theme}>
-          <ThemeLabel theme={theme} />
           <ThemeToggle
             theme={theme}
             handleClick={handleClick}
           />
+          <ThemeLabel theme={theme} />
         </section>
       </main>
     </div>
