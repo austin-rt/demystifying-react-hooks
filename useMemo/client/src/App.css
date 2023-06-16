@@ -1,0 +1,91 @@
+<<<<<<< HEAD
+.book-details__page{
+  width: 100%;
+}
+
+.book-list__container,
+.book-details__container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+=======
+input {
+  border: 1px solid #FFFFFF;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: transparent;
+  margin: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+>>>>>>> memo/main
+  align-items: center;
+  justify-content: center;
+}
+
+<<<<<<< HEAD
+.book-list__card,
+.book-details__card {
+  text-align: center;
+  width: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-list__title,
+.book-details__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.book-details__authors{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.book-details__downloads{
+  display: flex;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+=======
+main {
+  text-align: center;
+>>>>>>> memo/main
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+<<<<<<< HEAD
+}
+
+.App-link {
+  color: #61dafb;
+=======
+>>>>>>> memo/main
+}
