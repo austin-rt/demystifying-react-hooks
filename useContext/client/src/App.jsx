@@ -1,26 +1,14 @@
-import { useState } from 'react';
 import './index.css';
-import ThemeLabel from './components/ThemeLabel';
-import ThemeToggle from './components/ThemeToggle';
+import { useContext } from 'react';
+import NavBar from './components/Navbar';
+import ThemeContext from './context/ThemeContext';
 
 function App() {
-  const [theme, setTheme] = useState('light');
-
-  const handleClick = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className={theme}>
-      <main className={theme}>
-        <section className={theme}>
-          <ThemeToggle
-            theme={theme}
-            handleClick={handleClick}
-          />
-          <ThemeLabel theme={theme} />
-        </section>
-      </main>
+      <NavBar />
     </div>
   );
 }
