@@ -1,16 +1,16 @@
 import { FiSun, FiMoon } from 'react-icons/fi';
 
-const ThemeSliderToggle = ({ theme, handleClick }) => {
+const ThemeToggle = ({ toggleTheme }) => {
   return (
     <div
-      className={`theme-slider-toggle ${theme}`}
-      onClick={handleClick}
+      className='theme-slider-toggle'
+      onClick={toggleTheme}
     >
       <div className='toggle'>
         <div className='slider' />
         <div className='icon-container'>
           <FiSun className='sun-icon' />
-          <div classname='spacer'></div>
+          <div className='spacer'></div>
           <FiMoon className='moon-icon' />
         </div>
       </div>
@@ -18,4 +18,4 @@ const ThemeSliderToggle = ({ theme, handleClick }) => {
   );
 };
 
-export default ThemeSliderToggle;
+export default ThemeToggle;
