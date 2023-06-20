@@ -1,14 +1,10 @@
-import { useContext } from 'react';
-import ThemeContext from '../context/ThemeContext';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
-const ThemeSliderToggle = () => {
-  const { handleThemeChange } = useContext(ThemeContext);
-
+const ThemeToggle = ({ toggleTheme }) => {
   return (
     <div
       className='theme-slider-toggle'
-      onClick={handleThemeChange}
+      onClick={toggleTheme}
     >
       <div className='toggle'>
         <div className='slider' />
@@ -22,4 +18,4 @@ const ThemeSliderToggle = () => {
   );
 };
 
-export default ThemeSliderToggle;
+export default ThemeToggle;

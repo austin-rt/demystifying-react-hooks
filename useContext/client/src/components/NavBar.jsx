@@ -1,12 +1,13 @@
 import ThemeLabel from './ThemeLabel';
-import ThemeSliderToggle from './ThemeToggle';
+import ThemeToggle from './ThemeToggle';
 
-const NavBar = () => {
+const NavBar = ({ theme, toggleTheme }) => {
   return (
     <nav>
-      <ThemeSliderToggle />
-      <ThemeLabel />
+      <ThemeToggle toggleTheme={toggleTheme} />
+      <ThemeLabel theme={theme} />
     </nav>
   );
 };
+
 export default NavBar;
